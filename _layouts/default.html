@@ -11,6 +11,14 @@
   </header>
 
   <main>
+    <!-- Search Bar -->
+    <div>
+      <h2>Search Notes</h2>
+      <input type="text" id="search-input" placeholder="Search notes...">
+      <ul id="search-results"></ul>
+    </div>
+
+    <!-- Page Content -->
     {{ content }}
   </main>
 
@@ -28,23 +36,8 @@
       searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
       noResultsText: 'No results found',
       limit: 10,
-      fuzzy: false,
+      fuzzy: false
     });
   </script>
 </body>
 </html>
-
-
-<script src="https://unpkg.com/simple-jekyll-search@latest/dist/simple-jekyll-search.min.js"></script>
-<script>
-  SimpleJekyllSearch({
-    searchInput: document.getElementById('search-input'),
-    resultsContainer: document.getElementById('search-results'),
-    json: '{{ "/search.json" | relative_url }}',
-    searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
-    noResultsText: 'No results found',
-    limit: 10,
-    fuzzy: false
-  });
-</script>
-
