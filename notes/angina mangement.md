@@ -1,13 +1,13 @@
-#Angina medications 
+# Angina medications 
 
-##First line 
+## First line 
 beta-blocker or CCB
 PRN GTN spray
 
-##Second line
+## Second line
 add the other one 
 
-##Third line
+## Third line
 Isosorbide mononitrate
 Ivabradine
 Nicorandil 
