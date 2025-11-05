@@ -1,3 +1,8 @@
+---
+layout: default
+title: Home
+---
+
 # Angina medications 
 
 ## First line 
